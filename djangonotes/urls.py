@@ -25,5 +25,5 @@ urlpatterns = [
     path('api/v1/', include('notes.api.urls')),
     path('api/v1/', include('djoser.urls')),
     path('api/v1/', include('djoser.urls.jwt')),
-    re_path(r'^.*',  TemplateView.as_view(template_name="index.html")),
+    re_path(r'.*',  TemplateView.as_view(template_name="index.html")),
 ]
